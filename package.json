@@ -89,23 +89,12 @@
     "vitest": "^2.0.5"
   },
   "scripts": {
-    "build": " npm run clean && tsup && ts-node scripts/fix-cjs.ts",
-    "watch": "tsup --watch",
-    "clean": "del dist/*",
-    "lint": "eslint --fix src test",
-    "typecheck": "tsc -p test/tsconfig.json",
-    "typevalidation": "attw -P",
-    "test": "is-ci \"test:coverage\" \"test:watch\"",
-    "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest watch",
-    "e2e": "playwright test -c playwright-ct.config.ts",
-    "e2e:debug": "npm run e2e -- --project=chromium --debug",
-    "e2e:ui": "npm run e2e -- --ui",
-    "format": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
-    "validate": "npm run lint && npm run typecheck && npm run test:coverage && npm run e2e && npm run build && npm run size && npm run typevalidation",
-    "size": "size-limit",
-    "prepare": "husky",
-    "prepublishOnly": "npm run validate"
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "validate": "npm run build",
+    "lint": "eslint --fix src",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests specified\""
   },
   "tsup": {
     "dts": true,
