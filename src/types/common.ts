@@ -2,7 +2,7 @@ import { CSSProperties, ReactNode } from 'react';
 import { Styles as FloaterStyles } from 'react-floater';
 import { ValueOf } from 'type-fest';
 
-import { ACTIONS, EVENTS, LIFECYCLE, ORIGIN, STATUS } from '~/literals';
+import { ACTIONS, EVENTS, LIFECYCLE, ORIGIN, STATUS } from '../literals';
 
 export type Actions = ValueOf<typeof ACTIONS>;
 export type Events = ValueOf<typeof EVENTS>;

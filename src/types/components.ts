@@ -2,7 +2,7 @@ import { ElementType, MouseEventHandler, ReactNode, RefCallback } from 'react';
 import { Props as FloaterProps } from 'react-floater';
 import { PartialDeep, SetRequired, Simplify } from 'type-fest';
 
-import type { StoreInstance } from '~/modules/store';
+import type { StoreInstance } from '../modules/store';
 
 import { Actions, Events, Lifecycle, Locale, Origin, Placement, Status, Styles } from './common';
 
