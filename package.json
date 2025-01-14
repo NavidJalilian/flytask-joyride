@@ -1,6 +1,6 @@
 {
   "name": "flytask-joyride",
-  "version": "1.0.0", 
+  "version": "1.0.0",
   "description": "Flytask Joyride",
   "author": "Flytask",
   "repository": {
@@ -41,6 +41,7 @@
     "deep-diff": "^1.0.2",
     "deepmerge": "^4.3.1",
     "is-lite": "^1.2.1",
+    "lodash": "^4.17.21",
     "react-floater": "^0.7.9",
     "react-innertext": "^1.1.5",
     "react-is": "^16.13.1",

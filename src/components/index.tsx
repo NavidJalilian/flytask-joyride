@@ -16,7 +16,7 @@ import { log, shouldScroll } from '../modules/helpers';
 import { getMergedStep, validateSteps } from '../modules/step';
 import createStore from '../modules/store';
 
-import { ACTIONS, EVENTS, LIFECYCLE, STATUS } from '../literals';
+
 
 import Overlay from './Overlay';
 import Portal from './Portal';
@@ -25,6 +25,7 @@ import { defaultProps } from '../defaults';
 import { Actions, CallBackProps, Props, State, Status, StoreHelpers } from '../types';
 
 import Step from './Step';
+import { ACTIONS, EVENTS, LIFECYCLE, STATUS } from 'src/literals';
 
 class Joyride extends React.Component<Props, State> {
   private readonly helpers: StoreHelpers;
