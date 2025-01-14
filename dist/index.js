@@ -1203,6 +1203,8 @@ var JoyridePortal = class extends React3.Component {
     if (!isReact16) {
       throw new Error("react-joyride requires React 16.3 or later.");
     }
+    this.rootNode = (0, import_client.createRoot)(this.node);
+    this.rootNode.render(this.props.children);
   }
   componentDidUpdate() {
     if (!canUseDOM()) {
@@ -1226,14 +1228,10 @@ var JoyridePortal = class extends React3.Component {
     }
   }
   renderReact16() {
-    if (!canUseDOM() || !isReact16) {
+    if (!canUseDOM() || !isReact16 || !this.node) {
       return null;
     }
     const { children } = this.props;
-    if (!this.node) {
-      return null;
-    }
-    this.rootNode = (0, import_client.createRoot)(this.node);
     return ReactDOM.createPortal(children, this.node);
   }
   render() {
