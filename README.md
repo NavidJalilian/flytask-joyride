@@ -20,7 +20,7 @@ Talk about it on the [Discussions board](https://github.com/gilbarbara/react-joy
 ## Setup
 
 ```bash
-npm i react-joyride
+npm i flytask-joyride
 ```
 
 ## Getting Started
